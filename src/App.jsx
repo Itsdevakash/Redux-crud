@@ -9,7 +9,7 @@ export default function App() {
 
   return (
      <BrowserRouter>
-     <Routes>
+     <Routes> 
        <Route path='/' element={<Home />} />
        <Route path="new-customer" element={<NewCustomer />} />
        </Routes>
