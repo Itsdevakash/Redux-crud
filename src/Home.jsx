@@ -65,7 +65,7 @@ export default function Home() {
     <div className='bg-gray-200 min-h-screen py-16'>
     <div className='bg-white rounded-lg shadow-lg w-8/12 mx-auto p-6'>
 <div className='flex justify-between items-center '>
-  <h1 className='text-4xl font-bold text-rose-600'>Redux crud</h1>
+  <h1 className='text-4xl font-bold text-rose-600'>Redux Crud</h1>
   <Link to="/new-customer" className='text-white bg-indigo-600 px-6 py-2.5 font-medium'>
     <i className="ri-sticky-note-add-line mr-2"></i>
     New Customer
