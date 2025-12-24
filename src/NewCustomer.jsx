@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { CreateCustomer } from './redux/slices/customer';
+
 
 export default function NewCustomer() {
  const dispatch = useDispatch();
+ const navigate = useNavigate();
 
  const [form,setForm] = useState({
   customerName:"",
@@ -14,7 +16,9 @@ export default function NewCustomer() {
  })
 const addNewCustomer=(e)=>{
   e.preventDefault()
-  dispatch(CreateCustomer(form));
+   dispatch(CreateCustomer(form));
+   navigate('/')
+
 }
 
 const handeChange=(e)=>{
